@@ -1,8 +1,10 @@
 :root {
   --background: #f0ebe1;
   --dark: #262522;
+  --primary1: #9FDC26;
   --primary2: #f29c33;
   --primary3: #ee6352;
+  --primary4: #c4e5fc;
   --light: #fffbf2;
 }
 
@@ -17,6 +19,11 @@ a {
 
 li {
   list-style: none;
+}
+
+#menu-mobile-button .bar {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  transform-origin: 12px 12px;
 }
 
 .mobile-menu {
@@ -55,7 +62,7 @@ li {
 .mobile-menu .mobile-menu-body a {
   color: var(--background);
 }
-.mobile-menu .mobile-menu-body a.active {
+.mobile-menu .mobile-menu-body a.active, .mobile-menu .mobile-menu-body a:hover {
   color: var(--primary3);
 }
 .mobile-menu .mobile-menu-body .btn-mobile {
@@ -83,6 +90,10 @@ li {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
+}
+.mobile-open #menu-mobile-button {
+  background-color: rgba(255, 251, 242, 0.16);
+  stroke: var(--primary2);
 }
 
 .desktop-menu {
@@ -123,6 +134,7 @@ li {
   background-color: rgba(38, 37, 34, 0.08);
   border-radius: 16px;
   padding: 8px;
+  stroke: var(--dark);
 }
 .desktop-menu .btn-sub {
   background-color: var(--dark);
@@ -138,11 +150,21 @@ section {
   padding-block: 8px;
 }
 
+button {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 button:hover {
   opacity: 0.9;
 }
 button:active {
   transform: translateY(1px);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 footer .footer-content {
@@ -281,6 +303,11 @@ footer .footer-content nav ul li a:hover {
 .hero .hero-content {
   padding-block: 120px;
 }
+@media all and (width < 768px) {
+  .hero .hero-content {
+    padding-inline: 16px;
+  }
+}
 .hero .hero-content h1 {
   font-size: clamp(2.375rem, 0.625rem + 3.6458vw, 5rem);
 }
@@ -293,4 +320,149 @@ footer .footer-content nav ul li a:hover {
   font-size: 14px;
   border: none;
   outline: none;
+}
+
+.explore .explore-content {
+  background-color: var(--primary4);
+  color: var(--dark);
+  border-radius: 32px;
+  padding: 40px;
+}
+@media all and (width < 768px) {
+  .explore .explore-content {
+    padding-inline: 24px;
+  }
+}
+.explore .explore-content > div {
+  align-items: stretch;
+}
+.explore .explore-content li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 16px;
+  border-bottom: 1px solid rgba(38, 37, 34, 0.16);
+}
+.explore .explore-content li p {
+  margin: 0;
+  font-size: clamp(1rem, 0.9167rem + 0.1736vw, 1.125rem);
+  letter-spacing: 2%;
+  font-weight: 600;
+}
+.explore .explore-content .text-wrapper {
+  max-width: 494px;
+  gap: 40px;
+}
+.explore .explore-content .text-wrapper span {
+  background-color: var(--primary3);
+  color: var(--background);
+  padding-inline: 8px;
+  padding-block: 4px;
+  line-height: 16px;
+  font-size: 14px;
+  border-radius: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.explore .explore-content .text-wrapper h2 {
+  font-size: clamp(1.625rem, 1.0417rem + 1.2153vw, 2.5rem);
+}
+.explore .explore-content .text-wrapper p {
+  font-size: clamp(0.875rem, 0.7917rem + 0.1736vw, 1rem);
+}
+.explore .explore-content .text-wrapper button {
+  border: 1px solid var(--dark);
+  border-radius: 24px;
+  background-color: transparent;
+  outline: none;
+  padding-inline: 24px;
+  padding-block: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.explore .explore-content .text-wrapper button:hover {
+  background-color: var(--dark);
+  color: var(--primary4);
+}
+
+.featured .featured-content {
+  padding-inline: 16px;
+  padding-top: 40px;
+  padding-bottom: 16px;
+  border: 1px solid rgba(38, 37, 34, 0.24);
+  border-radius: 32px;
+  gap: 40px;
+}
+.featured .featured-content .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.featured .featured-content .header h2 {
+  color: var(--dark);
+  font-size: clamp(1.625rem, 1.0417rem + 1.2153vw, 2.5rem);
+}
+.featured .featured-content .header .controlls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.featured .featured-content .header .controlls button {
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.featured .card, .recipes .card {
+  background-color: var(--light);
+  border-radius: 32px;
+  border: 1px solid rgba(38, 37, 34, 0.16);
+}
+.featured .card .vegan, .recipes .card .vegan {
+  top: clamp(45%, 0.7917rem + 0.1736vw, 40%);
+  right: 16px;
+}
+@media all and (768px <= width < 1024px) {
+  .featured .card .vegan, .recipes .card .vegan {
+    top: clamp(45%, 0.7917rem + 0.1736vw, 55%);
+  }
+}
+@media all and (width < 768px) {
+  .featured .card .vegan, .recipes .card .vegan {
+    top: clamp(25%, 0.7917rem + 0.1736vw, 90%);
+  }
+}
+.featured .card h3, .recipes .card h3 {
+  font-size: clamp(1.3125rem, 1.1875rem + 0.2604vw, 1.5rem);
+  line-height: 120%;
+  letter-spacing: -1%;
+}
+.featured .card p, .recipes .card p {
+  color: var(--dark);
+  font-size: clamp(0.875rem, 0.7917rem + 0.1736vw, 1rem);
+}
+.featured .card span, .recipes .card span {
+  font-size: 12px;
+  color: var(--dark);
+}
+.featured .card a, .recipes .card a {
+  border: 1px solid var(--dark);
+  border-radius: 24px;
+  background-color: transparent;
+  outline: none;
+  padding-inline: 24px;
+  padding-block: 12px;
+  font-size: 14px;
+}
+.featured .card a:hover, .recipes .card a:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+@media all and (width < 768px) {
+  .featured .card a, .recipes .card a {
+    width: 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

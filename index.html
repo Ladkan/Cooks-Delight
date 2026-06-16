@@ -94,7 +94,13 @@
           <div class="mobile-nav d-lg-none d-flex align-items-center">
             <button id="menu-mobile-button"
               class="btn-light d-flex align-items-center justify-content-center fs-6 fw-medium">
-              <span class="material-symbols-outlined"> menu </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="cursor:pointer">
+                <g stroke-width="1.5" stroke-linecap="round">
+                  <line id="svg-top"    class="bar" x1="3" y1="6"  x2="21" y2="6"/>
+                  <line id="svg-middle" class="bar" x1="3" y1="12" x2="21" y2="12"/>
+                  <line id="svg-bottom" class="bar" x1="3" y1="18" x2="21" y2="18"/>
+                </g>
+              </svg>
             </button>
           </div>
         </nav>
@@ -103,18 +109,253 @@
   </header>
 
   <main class="p-3">
-
     <section class="hero mx-auto">
       <div class="hero-content">
         <div class="row">
           <div class="col-12">
             <div class="d-flex flex-column justify-content-center align-items-center gap-2">
-              <h1 class="text-uppercase fw-bold text-center">Unleash Culinary<br>Excellence</h1>
-              <p class="text-center">Explore a world of flavors, discover<br>handcrafted recipes, and let the aroma of<br>our passion for cooking fill your kitchen</p>
+              <h1 class="text-uppercase fw-bolder text-center">
+                Unleash Culinary<br />Excellence
+              </h1>
+              <p class="text-center">
+                Explore a world of flavors, discover<br />handcrafted recipes,
+                and let the aroma of<br />our passion for cooking fill your
+                kitchen
+              </p>
             </div>
           </div>
           <div class="col-12 d-flex align-items-center justify-content-center">
             <button class="text-uppercase">Explore Recipes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore mx-auto">
+      <div class="explore-content">
+        <div class="row gap-5 gap-md-0">
+          <div class="col-12 col-md-6 align-self-end">
+            <div class="text-wrapper d-flex flex-column">
+              <div class="d-flex flex-column gap-3">
+                <span class="text-uppercase">Explore</span>
+                <div>
+                  <h2 class="text-uppercase fw-bold">Out diverse<br />palette</h2>
+                  <p>
+                    If you are a breakfast enthusiast, a connoisseur of savory
+                    delights, or on the lookout for irresistible desserts, our
+                    curated selection has something to satisfy every palate.
+                  </p>
+                </div>
+              </div>
+              <button class="text-uppercase">See more</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column">
+              <ul>
+                <li>
+                  <img src="img/breakfest.svg" alt="breakfest">
+                  <p class="text-uppercase">Breakfest</p>
+                </li>
+                <li>
+                  <img src="img/lunch.svg" alt="lunch">
+                  <p class="text-uppercase">Lunch</p>
+                </li>
+                <li>
+                  <img src="img/dinner.svg" alt="dinner">
+                  <p class="text-uppercase">Dinner</p>
+                </li>
+                <li>
+                  <img src="img/dessert.svg" alt="dessert">
+                  <p class="text-uppercase">Dessert</p>
+                </li>
+                <li>
+                  <img src="img/quickbite.svg" alt="quick bite">
+                  <p class="text-uppercase">quick bite!</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured mx-auto">
+      <div class="featured-content d-flex flex-column">
+        <div class="header">
+          <h2 class="text-uppercase fw-bold">Featured recipes</h2>
+          <div class="controlls">
+            <button>
+              <img src="img/Arrow Left.svg" alt="Prev">
+            </button>
+            <button>
+              <img src="img/Arrow Right.svg" alt="Next">
+            </button>
+          </div>
+        </div>
+        <div class="row gap-3 gap-lg-0">
+          <div class="col-12 col-lg-6">
+            <article class="card border-0">
+              <img src="img/Savory Herb-Infused Chicken.png" class="card-img-top" alt="Savory Herb-Infined Chicken">
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 class="card-title fw-bold mb-2">
+                  Savory Herb-Infined Chicken
+                </h3>
+                <p class="card-text mb-4">
+                  Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken.
+                </p>
+                <div class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                  <span class="fw-bold text-uppercase">40 MIN - EASY PREP - 3 SERVES</span>
+                  <a href="#" class="px-3 py-1.5 fw-medium transition">VIEW RECIPE</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-lg-6">
+            <article class="card border-0">
+              <img src="img/Decadent Chocolate Mousse.png" class="card-img-top" alt="Decadent Chocolate Mousse">
+              <div class="vegan position-absolute d-flex align-items-center justify-content-center" >
+                <img src="img/vegan-tag.svg" alt="Vegan">
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 class="card-title fw-bold mb-2">
+                  Decadent Chocolate Mousse
+                </h3>
+                <p class="card-text mb-4">
+                  Dive into the velvety indulgence of our Decadent Chocolate Mousse. A dessert that transcends sweetness!
+                </p>
+                <div class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                  <span class="fw-bold text-uppercase">30 MIN - MEDIUM PREP - 4 SERVES</span>
+                  <a href="#" class="px-3 py-1.5 fw-medium transition">VIEW RECIPE</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipes mx-auto">
+      <div class="recipes-content d-flex flex-column">
+        <div class="header">
+
+        </div>
+        <div class="row gap-3 gap-lg-0 mb-3">
+          <div class="col-12 col-lg-4">
+            <article class="card border-0">
+              <img src="img/Savory Herb-Infused Chicken2.png" class="card-img-top" alt="Savory Herb-Infined Chicken">
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 class="card-title fw-bold mb-2">
+                  Savory Herb-Infined Chicken
+                </h3>
+                <p class="card-text mb-4">
+                  Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken.
+                </p>
+                <div class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                  <span class="fw-bold text-uppercase">40 MIN - EASY PREP - 3 SERVES</span>
+                  <a href="#" class="px-3 py-1.5 fw-medium transition">VIEW RECIPE</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-lg-4">
+            <article class="card border-0">
+              <img src="img/Lemon Garlic Grilled Chicken.png" class="card-img-top" alt="Lemon Garlic Grilled Chicken">
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 class="card-title fw-bold mb-2">
+                  Lemon Garlic Grilled Chicken
+                </h3>
+                <p class="card-text mb-4">
+                  Experience the perfect blend of zesty lemon and aromatic garlic with this roasted chicken recipe
+                </p>
+                <div class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                  <span class="fw-bold text-uppercase">1 hour - hard prep - 4 serves</span>
+                  <a href="#" class="px-3 py-1.5 fw-medium transition">VIEW RECIPE</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-lg-4">
+            <article class="card border-0">
+              <img src="img/Quinoa Veggie Stir-Fry.png" class="card-img-top" alt="Quinoa Veggie Stir-Fry">
+              <div class="vegan position-absolute d-flex align-items-center justify-content-center" >
+                <img src="img/vegan-tag.svg" alt="Vegan">
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 class="card-title fw-bold mb-2">
+                  Quinoa Veggie Stir-Fry
+                </h3>
+                <p class="card-text mb-4">
+                  Quick, wholesome, and bursting with flavors, it's perfect for a healthy weeknight dinner.
+                </p>
+                <div class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                  <span class="fw-bold text-uppercase">30 Min - easy prep - 3 serves</span>
+                  <a href="#" class="px-3 py-1.5 fw-medium transition">VIEW RECIPE</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row gap-3 gap-lg-0">
+          <div class="col-12 col-lg-4">
+            <article class="card border-0">
+              <img src="img/Berry Bliss Smoothie Bowl.png" class="card-img-top" alt="Berry Bliss Smoothie Bowl">
+              <div class="vegan position-absolute d-flex align-items-center justify-content-center" >
+                <img src="img/vegan-tag.svg" alt="Vegan">
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 class="card-title fw-bold mb-2">
+                  Berry Bliss Smoothie Bowl
+                </h3>
+                <p class="card-text mb-4">
+                  This berry smoothie bowl is not only visually appealing but also a powerhouse of antioxidants.
+                </p>
+                <div class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                  <span class="fw-bold text-uppercase">10 Min - easy prep - 2 serves</span>
+                  <a href="#" class="px-3 py-1.5 fw-medium transition">VIEW RECIPE</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-lg-4">
+            <article class="card border-0">
+              <img src="img/Spaghetti Aglio e Olio.png" class="card-img-top" alt="Spaghetti Aglio e Olio">
+                            <div class="vegan position-absolute d-flex align-items-center justify-content-center" >
+                <img src="img/vegan-tag.svg" alt="Vegan">
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 class="card-title fw-bold mb-2">
+                  Spaghetti Aglio e Olio
+                </h3>
+                <p class="card-text mb-4">
+                  A minimalist yet flavorful dish with garlic, olive oil, and a hint of red pepper flakes.
+                </p>
+                <div class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                  <span class="fw-bold text-uppercase">20 min - easy prep - 2 serves</span>
+                  <a href="#" class="px-3 py-1.5 fw-medium transition">VIEW RECIPE</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-lg-4">
+            <article class="card border-0">
+              <img src="img/Grilled Veggies with Sauce.png" class="card-img-top" alt="Grilled Veggies with Sauce">
+              <div class="vegan position-absolute d-flex align-items-center justify-content-center" >
+                <img src="img/vegan-tag.svg" alt="Vegan">
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h3 class="card-title fw-bold mb-2">
+                  Grilled Veggies with Sauce
+                </h3>
+                <p class="card-text mb-4">
+                  Served with a zesty chimichurri sauce its a perfect addition to your outdoor gatherings.
+                </p>
+                <div class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                  <span class="fw-bold text-uppercase">25 Min - medium prep - 6 serves</span>
+                  <a href="#" class="px-3 py-1.5 fw-medium transition">VIEW RECIPE</a>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -127,14 +368,19 @@
             <div class="col-12">
               <div class="d-flex flex-column gap-2 text-center">
                 <span class="text-uppercase">Subscribe</span>
-                <h2 class="text-uppercase fw-bold">Join the fun<br>subscribe now!</h2>
-                <p>Subscribe to our newsletter for a weekly serving of recipes, cooking<br> tips, and exclusive insights
-                  straight to your inbox.</p>
+                <h2 class="text-uppercase fw-bold">
+                  Join the fun<br />subscribe now!
+                </h2>
+                <p>
+                  Subscribe to our newsletter for a weekly serving of recipes,
+                  cooking<br />
+                  tips, and exclusive insights straight to your inbox.
+                </p>
               </div>
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center">
               <form class="cta-input">
-                <input type="email" placeholder="Email Address">
+                <input type="email" placeholder="Email Address" />
                 <button class="text-uppercase">Subscribe</button>
               </form>
             </div>
@@ -151,10 +397,8 @@
           <div class="col-12">
             <div class="footer-upper d-flex flex-column flex-md-row py-3 align-items-center justify-content-between">
               <div class="d-flex align-items-center justify-content-center gap-1">
-                <img src="img/Logo_gray.svg" alt="">
-                <span class="logo-text">
-                  Cooks<br>Delight
-                </span>
+                <img src="img/Logo_gray.svg" alt="" />
+                <span class="logo-text"> Cooks<br />Delight </span>
               </div>
               <nav>
                 <ul class="d-flex flex-column flex-md-row gap-3 gap-md-4 m-0 p-0 fs-6 fw-medium">
@@ -173,9 +417,9 @@
                 </ul>
               </nav>
               <div class="media d-flex justify-content-center align-items-center gap-3">
-                <img src="img/facebook.png" alt="Facebook">
-                <img src="img/instagram.png" alt="Instagram">
-                <img src="img/youtube.png" alt="Youtube">
+                <img src="img/facebook.png" alt="Facebook" />
+                <img src="img/instagram.png" alt="Instagram" />
+                <img src="img/youtube.png" alt="Youtube" />
               </div>
             </div>
           </div>
