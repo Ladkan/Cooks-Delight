@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.svg" type="image/x-icon" />
+    <title>Cooks Delight</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="position-sticky w-100 top-0 p-3">
+        <div class="mobile-nav d-lg-none">
+            <div class="mobile-menu d-lg-none">
+                <div class="mobile-menu-body">
+                    <nav class="w-100">
+                        <ul class="p-0">
+                            <li>
+                                <a href="index.html" class="text-uppercase">Home</a>
+                            </li>
+                            <li>
+                                <a href="recipes.html" class="text-uppercase">Recipes</a>
+                            </li>
+                            <li>
+                                <a href="cookingtips.html" class="text-uppercase active">Cooking tips</a>
+                            </li>
+                            <li>
+                                <a href="aboutus.html" class="text-uppercase">About us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <button class="btn-mobile d-flex justify-content-center align-items-center">
+                            <span class="material-symbols-outlined"> search </span>
+                        </button>
+                        <button class="btn-mobile sub d-flex justify-content-center align-items-center">
+                            Subscribe
+                        </button>
+                    </div>
+                    <div class="link-wrapper d-flex align-items-center justify-content-center gap-3">
+                        <a href="#">
+                            <img src="img/facebook.png" alt="Facebook" />
+                        </a>
+                        <a href="#">
+                            <img src="img/instagram.png" alt="Instagram" />
+                        </a>
+                        <a href="#">
+                            <img src="img/youtube.png" alt="Youtube" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desktop-menu mx-auto">
+            <div class="container-fluid py-3 px-4">
+                <nav class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex gap-2 align-items-center justify-content-center">
+                        <img src="img/Logo.svg" alt="Cooks Delight logo" />
+                        <span class="fw-bold lh-sm">Cooks <br />Delight</span>
+                    </div>
+                    <div class="d-none d-lg-flex justify-content-center align-items-center">
+                        <ul class="d-flex gap-4 m-0 p-0 fs-6 fw-bold">
+                            <li>
+                                <a href="index.html" class="text-uppercase">Home</a>
+                            </li>
+                            <li>
+                                <a href="recipes.html" class="text-uppercase">Recipes</a>
+                            </li>
+                            <li>
+                                <a href="cookingtips.html" class="text-uppercase active">Cooking tips</a>
+                            </li>
+                            <li>
+                                <a href="aboutus.html" class="text-uppercase">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-none d-lg-flex gap-3 align-items-center justify-content-center">
+                        <button class="btn-light d-flex justify-content-center align-items-center">
+                            <span class="material-symbols-outlined"> search </span>
+                        </button>
+                        <button class="btn-sub d-flex justify-content-center align-items-center">
+                            Subscribe
+                        </button>
+                    </div>
+                    <div class="mobile-nav d-lg-none d-flex align-items-center">
+                        <button id="menu-mobile-button"
+                            class="btn-light d-flex align-items-center justify-content-center fs-6 fw-medium">
+                            <span class="material-symbols-outlined"> menu </span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="p-3">
+
+        <section class="hero-alt mx-auto">
+            <div class="alt-content">
+                <div class="row gap-3 gap-lg-0">
+                    <div class="col-12 col-lg-7">
+                        <h1 class="text-uppercase">Our Essential<br> Cooking Tips</h1>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <p class="text-lg-end">Welcome to Cooks Delight's treasure trove of cooking wisdom! Whether you're a seasoned chef or just starting your culinary journey, our cooking tips are designed to elevate your skills, enhance your kitchen experience, and bring joy to your cooking adventures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured mx-auto">
+            <div class="featured-content d-flex flex-column">
+                <div class="header">
+                    <h2 class="text-uppercase fw-bold">Newest recipes</h2>
+                    <div class="controlls">
+                        <button>
+                            <img src="img/Arrow Left.svg" alt="Prev">
+                        </button>
+                        <button>
+                            <img src="img/Arrow Right.svg" alt="Next">
+                        </button>
+                    </div>
+                </div>
+                <div class="row gap-3 gap-lg-0">
+                    <div class="col-12 col-lg-6">
+                        <article class="card border-0">
+                            <img src="img/Savory Herb-Infused Chicken.png" class="card-img-top"
+                                alt="Savory Herb-Infined Chicken">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Savory Herb-Infined Chicken
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused
+                                    Chicken.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">40 MIN - EASY PREP - 3 SERVES</span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">VIEW RECIPE</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <article class="card border-0">
+                            <img src="img/Decadent Chocolate Mousse.png" class="card-img-top"
+                                alt="Decadent Chocolate Mousse">
+                            <div class="vegan position-absolute d-flex align-items-center justify-content-center">
+                                <img src="img/vegan-tag.svg" alt="Vegan">
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Decadent Chocolate Mousse
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Dive into the velvety indulgence of our Decadent Chocolate Mousse. A dessert that
+                                    transcends sweetness!
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">30 MIN - MEDIUM PREP - 4 SERVES</span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">VIEW RECIPE</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards mx-auto">
+            <div class="cards-content d-flex flex-column">
+                <div class="header ct">
+                    <h2 class="text-uppercase fw-bold">Mastering the Basics</h2>
+                    <div class="controlls">
+                        <button>
+                            <img src="img/Arrow Left.svg" alt="Prev">
+                        </button>
+                        <button>
+                            <img src="img/Arrow Right.svg" alt="Next">
+                        </button>
+                    </div>
+                </div>
+                <div class="row gap-3 gap-lg-0 mb-3">
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/knife.png" class="card-img-top" alt="Knife Skills">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Knife Skills
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Unlock the art of precision in your kitchen with proper chopping, dicing, and
+                                    slicing techniques. Elevate your culinary creations to new heights.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">15 min - 01 JUN 23 </span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Sauteing and Searing.png" class="card-img-top" alt="Sauteing and Searing">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Sauteing and Searing
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Achieve the perfect sear and elevate flavors in your dishes. Learn the secrets to
+                                    sautéing like a pro and creating irresistible textures.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">20 min - 01 JUN 23 </span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Roasting Tips.png" class="card-img-top" alt="Roasting Tips">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Roasting Tips
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Ensure even cooking and unlock flavorful results with our expert roasting tips. From
+                                    golden vegetables to succulent meats, master the art of roasting.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">30 Min - easy prep - 3 serves</span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row gap-3 gap-lg-0">
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Prep Workstations.png" class="card-img-top" alt="Prep Workstations">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Prep Workstations:
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Efficiently organize your kitchen space for chopping, mixing, and cooking. Elevate
+                                    your efficiency in the heart of your culinary domain.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">15 min - 01 JUN 23 </span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Cleaning as You Go.png" class="card-img-top" alt="Cleaning as You Go">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Cleaning as You Go
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Maintain a tidy kitchen for stress-free cooking. Learn the art of cleaning as you
+                                    go, turning every culinary endeavor into a seamless experience.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">20 min - 01 JUN 23</span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Recipe Modification.png" class="card-img-top" alt="Recipe Modification">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Recipe Modification
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Feel confident modifying recipes to suit your taste. Explore the art of culinary
+                                    creativity in crafting dishes uniquely your own.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">25 min - 01 JUN 23</span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nourishing mx-auto">
+            <div class="nourishing-content d-flex flex-column">
+                <div class="header ct">
+                    <h2 class="text-uppercase fw-bold">Nourishing Every Palate</h2>
+                    <div class="controlls">
+                        <button>
+                            <img src="img/Arrow Left.svg" alt="Prev">
+                        </button>
+                        <button>
+                            <img src="img/Arrow Right.svg" alt="Next">
+                        </button>
+                    </div>
+                </div>
+                <div class="row gap-3 gap-lg-0">
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0 overflow-hidden">
+
+                            <img src="img/Gluten-Free Alternatives.png" class="card-img h-100 w-100 object-fit-cover"
+                                alt="Gluten-Free Alternatives">
+
+                            <div class="position-absolute top-0 start-0 w-100 h-100"
+                                style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.75) 80%);">
+                            </div>
+
+                            <div class="card-img-overlay p-4 d-flex flex-column justify-content-end"
+                                style="z-index: 2;">
+
+                                <h3 class="card-title fw-bold mb-2">
+                                    Gluten-Free Alternatives
+                                </h3>
+
+                                <p class="card-text mb-4">
+Explore the world of gluten-free flours and grains, ensuring your dishes cater to a diverse range of dietary preferences.
+                                </p>
+
+                                <div
+                                    class="d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center w-100">
+                                    <span class="fw-bold text-uppercase">
+                                        15 min - 01 JUN 23
+                                    </span>
+                                    <a href="#" class="btn rounded-pill px-3 py-1.5 fw-medium text-white">
+                                        Read more
+                                    </a>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0 overflow-hidden">
+
+                            <img src="img/Plant-Based Cooking.png" class="card-img h-100 w-100 object-fit-cover"
+                                alt="Plant-Based Cooking">
+
+                            <div class="position-absolute top-0 start-0 w-100 h-100"
+                                style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.75) 80%);">
+                            </div>
+
+                            <div class="card-img-overlay p-4 d-flex flex-column justify-content-end"
+                                style="z-index: 2;">
+
+                                <h3 class="card-title fw-bold mb-2">
+                                    Plant-Based Cooking
+                                </h3>
+
+                                <p class="card-text mb-4">
+Delight in the realm of plant-based cooking with tips for crafting delicious vegetarian and vegan dishes.
+                                </p>
+
+                                <div
+                                    class="d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center w-100">
+                                    <span class="fw-bold text-uppercase">
+                                        15 min - 01 JUN 23
+                                    </span>
+                                    <a href="#" class="btn rounded-pill px-3 py-1.5 fw-medium text-white">
+                                        Read more
+                                    </a>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0 overflow-hidden">
+
+                            <img src="img/Allergy-Friendly Substitutions.png" class="card-img h-100 w-100 object-fit-cover"
+                                alt="Allergy-Friendly Substitutions">
+
+                            <div class="position-absolute top-0 start-0 w-100 h-100"
+                                style="background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.75) 80%);">
+                            </div>
+
+                            <div class="card-img-overlay p-4 d-flex flex-column justify-content-end"
+                                style="z-index: 2;">
+
+                                <h3 class="card-title fw-bold mb-2">
+                                    Allergy-Friendly Substitutions
+                                </h3>
+
+                                <p class="card-text mb-4">
+Discover options for common allergens, ensuring everyone can savor the flavors of your culinary creations.
+                                </p>
+
+                                <div
+                                    class="d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center w-100">
+                                    <span class="fw-bold text-uppercase">
+                                        15 min - 01 JUN 23
+                                    </span>
+                                    <a href="#" class="btn rounded-pill px-3 py-1.5 fw-medium text-white">
+                                        Read more
+                                    </a>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards mx-auto">
+            <div class="cards-content d-flex flex-column">
+                <div class="header ct">
+                    <h2 class="text-uppercase fw-bold">TIps & tricks</h2>
+                    <div class="controlls">
+                        <button>
+                            <img src="img/Arrow Left.svg" alt="Prev">
+                        </button>
+                        <button>
+                            <img src="img/Arrow Right.svg" alt="Next">
+                        </button>
+                    </div>
+                </div>
+                <div class="row gap-3 gap-lg-0 mb-3">
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Fresh vs Dried Herbs.png" class="card-img-top" alt="Fresh vs. Dried Herbs">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Fresh vs. Dried Herbs
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Discover the nuanced world of herbs. Learn when to opt for the freshness of herbs
+                                    and when dried variants can amplify your culinary creations.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">15 min - 01 JUN 23</span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Choosing Produce.png" class="card-img-top" alt="Choosing Produce">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Choosing Produce
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Selecting ripe fruits and vegetables is an art. Explore our insights to ensure
+                                    optimal taste in every dish.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">20 min - 01 JUN 23 </span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Understanding Spices.png" class="card-img-top" alt="Understanding Spices">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Understanding Spices
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Enhance flavors by navigating the vast array of spices and seasonings. Uncover the
+                                    secrets of creating dynamic taste profiles.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">30 Min - easy prep - 3 serves</span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row gap-3 gap-lg-0">
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Balancing Sweet and Savory.png" class="card-img-top"
+                                alt="Balancing Sweet and Savory">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Balancing Sweet and Savory
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Achieve the perfect symphony of flavors by mastering the art of balancing sweet and
+                                    savory elements in your dishes
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">15 min - 01 JUN 23 </span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Too Salty.png" class="card-img-top"
+                                alt="Too Salty? Too Sweet? Fixing Seasoning Issues">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Too Salty? Too Sweet? Fixing Seasoning Issues
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Discover quick fixes for seasoning mishaps and ensure your dishes are perfectly
+                                    balanced.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">20 min - 01 JUN 23</span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="card border-0">
+                            <img src="img/Recipe Modification.png" class="card-img-top" alt="Storage Solutions">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title fw-bold mb-2">
+                                    Storage Solutions
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Keep ingredients fresh and accessible with our storage solutions. Transform your
+                                    kitchen into an organized oasis.
+                                </p>
+                                <div
+                                    class="mt-auto d-flex flex-column flex-lg-row gap-3 gap-lg-0 justify-content-between align-items-center">
+                                    <span class="fw-bold text-uppercase">25 min - 01 JUN 23</span>
+                                    <a href="#" class="px-3 py-1.5 fw-medium transition">Read more</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta mx-auto">
+            <div class="cta-content">
+                <div class="mx-auto py-5">
+                    <div class="row gap-4">
+                        <div class="col-12">
+                            <div class="d-flex flex-column gap-2 text-center">
+                                <span class="text-uppercase">Subscribe</span>
+                                <h2 class="text-uppercase fw-bold">Join the fun<br>subscribe now!</h2>
+                                <p>Subscribe to our newsletter for a weekly serving of recipes, cooking<br> tips, and
+                                    exclusive insights
+                                    straight to your inbox.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <form class="cta-input">
+                                <input type="email" placeholder="Email Address">
+                                <button class="text-uppercase">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-100 p-3 bottom-0">
+        <div class="footer-content mx-auto">
+            <div class="container-fluid">
+                <div class="row gap-3">
+                    <div class="col-12">
+                        <div
+                            class="footer-upper d-flex flex-column flex-md-row py-3 align-items-center justify-content-between">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img src="img/Logo_gray.svg" alt="">
+                                <span class="logo-text">
+                                    Cooks<br>Delight
+                                </span>
+                            </div>
+                            <nav>
+                                <ul class="d-flex flex-column flex-md-row gap-3 gap-md-4 m-0 p-0 fs-6 fw-medium">
+                                    <li>
+                                        <a href="index.html" class="text-uppercase">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="recipes.html" class="text-uppercase">Recipes</a>
+                                    </li>
+                                    <li>
+                                        <a href="cookingtips.html" class="text-uppercase">Cooking tips</a>
+                                    </li>
+                                    <li>
+                                        <a href="aboutus.html" class="text-uppercase">About us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="media d-flex justify-content-center align-items-center gap-3">
+                                <img src="img/facebook.png" alt="Facebook">
+                                <img src="img/instagram.png" alt="Instagram">
+                                <img src="img/youtube.png" alt="Youtube">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <span class="copy">COPYRIGHT: &copy; 2026 COOKS DELIGHT.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
