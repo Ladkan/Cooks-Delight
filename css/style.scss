@@ -10,10 +10,10 @@
 
 $breakpoint-mobile: 768px;
 $breakpoint-desktop: 1024px;
-$breakpoint-nav: 992px;
+$breakpoint-mini: 379px;
 
-@mixin navbar {
-  @media all and (width < #{$breakpoint-nav}) {
+@mixin mini {
+  @media all and (width < #{$breakpoint-mini}) {
     @content;
   }
 }
@@ -45,12 +45,15 @@ a {
   color: var(--dark);
 }
 
-li {
-  list-style: none;
+p {
+  margin-bottom: 0;
 }
 
-header{
+header {
   z-index: 999999;
+  li{
+    list-style: none;
+  }
 }
 
 #menu-mobile-button {
@@ -286,12 +289,13 @@ footer {
     overflow: hidden;
     z-index: 1;
 
-    &::after, &::before{
+    &::after,
+    &::before {
       content: "";
       position: absolute;
       width: 100%;
       height: 772px;
-      background-color: #FF6653;
+      background-color: #ff6653;
       border-radius: 50%;
       left: -10px;
       z-index: -1;
@@ -300,14 +304,14 @@ footer {
       }
     }
 
-    &::before{
+    &::before {
       top: -612px;
       @include mobile {
         top: -212px;
       }
     }
 
-    &::after{
+    &::after {
       bottom: -612px;
       @include mobile {
         bottom: -212px;
@@ -403,10 +407,9 @@ footer {
   }
 }
 
-.hero-alt{
-  .alt-content{
-
-    padding: 64px;
+.hero-alt {
+  .alt-content {
+    padding-block: 64px;
 
     @include mobile {
       padding-inline: 16px;
@@ -418,9 +421,32 @@ footer {
       font-weight: 800;
       line-height: 100%;
     }
-    p{
+    p {
       font-size: clamp(1rem, 0.7917rem + 0.434vw, 1.3125rem);
       color: rgba($color: #262522, $alpha: 0.6);
+    }
+
+    a {
+      font-size: 14px;
+      border-radius: 24px;
+      padding-inline: 24px;
+      padding-block: 12px;
+      background-color: var(--primary2);
+      color: var(--dark);
+      width: fit-content;
+      &:hover {
+        opacity: 80%;
+      }
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-self: flex-end;
     }
   }
 }
@@ -512,19 +538,18 @@ footer {
 .featured,
 .cards,
 .nourishing {
-
-      .controlls {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2px;
-        button {
-          padding: 0;
-          background: transparent;
-          border: none;
-          outline: none;
-        }
-      }
+  .controlls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    button {
+      padding: 0;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+  }
 
   .card {
     background-color: var(--light);
@@ -633,7 +658,7 @@ footer {
     border: 1px solid rgba($color: #262522, $alpha: 0.24);
     border-radius: 32px;
     padding: 14px;
-    img{
+    img {
       border-radius: 24px;
     }
     h2 {
@@ -670,8 +695,8 @@ footer {
   }
 }
 
-.nourishing{
-  .nourishing-content{
+.nourishing {
+  .nourishing-content {
     background-color: var(--primary4);
     padding-inline: 40px;
     padding-bottom: 40px;
@@ -688,9 +713,250 @@ footer {
       }
     }
 
-    .card{
-      h3, p, span{
+    .card {
+      h3,
+      p,
+      span {
         color: var(--background);
+      }
+    }
+  }
+}
+
+.about {
+  .about-content {
+    border: 1px solid rgba($color: #262522, $alpha: 0.24);
+    border-radius: 32px;
+    padding: 16px;
+    gap: 64px;
+    display: flex;
+    flex-direction: column;
+    .follow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-inline: 24px;
+      padding-block: 12px;
+      border: 1px solid var(--dark);
+      border-radius: 24px;
+      img {
+        cursor: pointer;
+      }
+    }
+    .message {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-inline: 24px;
+      padding-top: 16px;
+      h2 {
+        font-size: clamp(1.625rem, 1.0417rem + 1.2153vw, 2.5rem);
+        color: var(--dark);
+        letter-spacing: 1%;
+        font-weight: 700;
+      }
+      p {
+        font-size: clamp(0.875rem, 0.7917rem + 0.1736vw, 1rem);
+        color: rgba($color: #333333, $alpha: 0.8);
+        line-height: 140%;
+        letter-spacing: 1%;
+      }
+      img {
+        width: min-content;
+      }
+    }
+  }
+}
+
+.recipe {
+  .recipe-content {
+    border: 1px solid rgba($color: #262522, $alpha: 0.24);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 40px;
+    padding-block: 64px;
+    gap: 40px;
+
+    @include mobile {
+      padding-inline: 16px;
+      padding-bottom: 40px;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      img {
+        border-radius: 24px;
+        object-fit: cover;
+        min-height: 480px;
+      }
+      h1 {
+        color: var(--dark);
+        font-weight: 800;
+        font-size: clamp(2.375rem, 0.625rem + 3.6458vw, 5rem);
+      }
+      .tag {
+        background-color: var(--primary3);
+        color: var(--background);
+        padding-inline: 8px;
+        padding-block: 4px;
+        line-height: 16px;
+        font-size: 14px;
+        border-radius: 12px;
+        width: fit-content;
+      }
+      .message {
+        color: rgba($color: #262522, $alpha: 0.6);
+        font-size: clamp(0.875rem, 0.7917rem + 0.1736vw, 1rem);
+        max-width: 648px;
+      }
+
+      .items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        & > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          color: var(--dark);
+          --gap: 24px;
+
+            @include mini {
+              --gap: 12px
+            }
+
+          p{
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 2%;
+            line-height: 100%;
+            text-transform: uppercase;
+          }
+          &:first-child{
+            padding-right: var(--gap);
+          }
+          &:nth-child(2){
+            padding-right: var(--gap);
+          }
+
+          &:not(:first-child){
+            &::before{
+              content: '';
+              background-color: var(--dark);
+              border-radius: 100%;
+              height: 4px;
+              width: 4px;
+              margin-right: var(--gap);
+            }
+          }
+        }
+      }
+
+    }
+
+    .recipe-info{
+
+      gap: 40px;
+
+      p, strong{
+        font-size: clamp(0.875rem, 0.7917rem + 0.1736vw, 1rem);
+        line-height: 140%;
+        letter-spacing: 1%;
+        color: rgba($color: #333333, $alpha: 0.8);
+      }
+      strong{
+        color: var(--dark);
+      }
+      h2{
+        font-size: clamp(1.3125rem, 1.1875rem + 0.2604vw, 1.5rem);
+        letter-spacing: -1%;
+        line-height: 120%;
+        font-weight: 700;
+        color: var(--dark);
+      }
+      h3{
+        font-size: clamp(1rem, 0.9167rem + 0.1736vw, 1.125rem);
+        letter-spacing: 2%;
+        font-weight: 600;
+        color: var(--primary3);
+        text-transform: uppercase;
+      }
+      span{
+        color: var(--primary3);
+        text-decoration: underline;
+      }
+      .follow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+        padding-inline: 24px;
+        padding-block: 12px;
+        border-radius: 24px;
+        border: 1px solid var(--dark);
+        width: min-content;
+        p{
+          font-size: 12px;
+          line-height: 120%;
+          font-weight: 500;
+          letter-spacing: 1%;
+          color: var(--dark);
+        }
+        & > div {
+          gap: 12px;
+        }
+        img{
+          cursor: pointer;
+        }
+      }
+      .author{
+
+        img{
+          max-height: 120px;
+          max-width: 120px;
+        }
+
+        & > div {
+          gap: 12px;
+        }
+        a{
+          padding-inline: 24px;
+          padding-block: 12px;
+          border-radius: 24px;
+          border: 1px solid var(--dark);
+          font-size: 14px;
+          font-weight: 500;
+          width: fit-content;
+        }
+      }
+      .info{
+        padding-inline: 16px;
+        padding-bottom: 16px;
+        padding-top: 40px;
+
+        & > div {
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          padding-inline: 16px;
+          padding-block: 24px;
+          border-radius: 24px;
+          background-color: var(--light);
+          border: 1px solid rgba($color: #262522, $alpha: 0.24);
+          ul{
+            padding-left: 16px;
+            p{
+              font-size: clamp(1rem, 0.7917rem + 0.434vw, 1.3125rem);
+              color: var(--dark);
+            }
+          }
+        }
       }
     }
 
