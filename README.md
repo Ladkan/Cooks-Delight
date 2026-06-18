@@ -3,6 +3,7 @@
 Moderní a plně responzivní webový portál pro milovníky vaření, sdílení kulinářských receptů a objevování kuchyňských tipů.
 
 **Figma předloha:** [Zobrazit design v komunitě Figma](https://www.figma.com/community/file/1331351586208563684)
+
 **Demo:** [Demo](https://ladkan.github.io/Cooks-Delight/)
 ---
 
