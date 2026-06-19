@@ -605,6 +605,7 @@ footer .footer-content nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 16px;
 }
 .cards .cards-content .header .pills .pill {
